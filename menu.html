@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foo Bar</title>
+  <script type="module" crossorigin src="./assets/menu.e5e606f7.js"></script>
+    <link rel="modulepreload" href="./assets/vendor.0bdabf0e.js">
+    <link rel="stylesheet" href="./assets/menu.3bfdc8d7.css">
+    <link rel="stylesheet" href="./assets/style.749ae3e9.css">
+  </head>
+
+<body>
+
+
+  <div id="app">
+
+    <header>
+      <img src="./assets/malt-icon.a6d5497b.png">
+      <h1>Menu</h1>
+      <p>Add beer types on this page <br> then proceed to checkout to choose the amount.</p>
+    </header>
+
+    <main class="menu">
+      <section id="bottles">
+        <!-- <h1>Bottles</h1> -->
+        <template id="bottletemplate">
+          <article>
+            <img alt="">
+            <div class="text">
+              <h2 class="name">{item.name}</h2>
+              <p class="description">{item.description.aroma}</p>
+              <button>Add Order </button>
+            </div>
+          </article>
+        </template>
+      </section>
+      <section id="taps">
+        <!-- <h1> Taps</h1> -->
+        <template id="taptemplate">
+          <article>
+            <img alt="">
+            <div class="text">
+              <h2 class="name">{item.name}</h2>
+              <button class="addtap">Add Order </button>
+            </div>
+          </article>
+        </template>
+      </section>
+    </main>
+
+    <footer>
+      <nav id="orders">
+        <ul id="ordered-items">
+        </ul>
+        <div id="checkout">
+          <p>Subtotal: <span id="price">0</span> DKK</p>
+          <br>
+          <a href="/checkout.html">CHECKOUT</a>
+        </div>
+      </nav>
+    </footer>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
